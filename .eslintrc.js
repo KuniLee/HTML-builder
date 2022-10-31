@@ -14,12 +14,15 @@ module.exports = {
       2
     ],
     'quotes': [
-      'error',
+      'warn',
       'single'
     ],
     'semi': [
-      'error',
-      'always'
+      'warn',
+      'never'
+    ],
+    'no-unused-vars': [
+      'warn',
     ]
   }
-};
+}
