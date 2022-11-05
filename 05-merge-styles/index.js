@@ -15,6 +15,7 @@ function mergeStyles(stylesPath, bundlePath) {
         data += chunk
       })
       readStream.on('end', () => {
+        data += '\r\n'
         resol(data)
       })
     }))))
