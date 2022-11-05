@@ -10,3 +10,6 @@ input.on('data', chunk => {
 input.on('end', () => {
   exit(0)
 })
+input.on('error', (err) => {
+  console.error('Reading error:', err)
+})
